@@ -6,7 +6,9 @@ This guide provides instructions for setting up Monopogen using a Conda environm
 
 Create and activate a Conda environment with the required packages.
 
-conda create -n monopogen_env  python 
+conda create -n monopogen_env  python
+
+
 conda activate monopogen_env
 
 
