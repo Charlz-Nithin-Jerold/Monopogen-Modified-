@@ -2,7 +2,7 @@
 
 This guide provides instructions for setting up Monopogen using a Conda environment and making necessary modifications to streamline its use.
 
-1. Set Up Conda Environment
+# Set Up Conda Environment
 
 Create and activate a Conda environment with the required packages.
 
