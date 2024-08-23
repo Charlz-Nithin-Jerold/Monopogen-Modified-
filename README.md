@@ -14,7 +14,7 @@ conda activate monopogen_env
 conda install -c bioconda samtools bcftools py-bgzip openjdk 
 
 
-2. Clone Monopogen Repository
+# Clone Monopogen Repository
 Clone the Monopogen repository from GitHub.
 
   git clone https://github.com/KChen-lab/Monopogen.git
@@ -23,8 +23,7 @@ Clone the Monopogen repository from GitHub.
   
   pip install -e . 
 
-
-3. Modify Monopogen.py Script
+# Modify Monopogen.py Script
 
 Edit `Monopogen.py` to use Conda-installed tools.
 
@@ -44,7 +43,7 @@ java = shutil.which("java")
 beagle = os.path.abspath(args.app_path) + "/ beagle.27Jul16.86a.jar"
 
 
-4.Run Preprocessing
+# Run Preprocessing
 
 Ensure necessary files are prepared as per the original instructions, then run preprocessing.
 
@@ -52,7 +51,7 @@ path="/path/to/Monopogen"
 ${path}/src/Monopogen.py preProcess -b bam.lst -o retina -a ${path}/apps -t 1
 
 
-5. Germline Processing
+# Germline Processing
 
 Run the following steps individually:
 # Step 1: Run bcftools pileup and normalization
