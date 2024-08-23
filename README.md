@@ -17,9 +17,11 @@ conda install -c bioconda samtools bcftools py-bgzip openjdk
 2. Clone Monopogen Repository
 Clone the Monopogen repository from GitHub.
 
-git clone https://github.com/KChen-lab/Monopogen.git
-cd Monopogen
-pip install -e . 
+  git clone https://github.com/KChen-lab/Monopogen.git
+  
+  cd Monopogen
+  
+  pip install -e . 
 
 
 3. Modify Monopogen.py Script
