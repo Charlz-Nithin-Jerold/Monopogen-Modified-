@@ -58,7 +58,9 @@ ${path}/src/Monopogen.py preProcess -b bam.lst -o retina -a ${path}/apps -t 1
 Run the following steps individually:
 # Step 1: Run bcftools pileup and normalization
 
+```
 /path/to/conda/envs/monopogen_env/bin/bcftools mpileup -b retina/Bam/chr20.filter.bam.lst -f GRCh38.chr20.fa -r chr20 -q 20 -Q 20 -d 10000000 | /path/to/conda/envs/monopogen_env/bin/bcftools call -mv -Ob | /path/to/conda/envs/monopogen_env/bin/bcftools norm -m-both -f GRCh38.chr20.fa | grep -v INDEL | /path/to/conda/envs/monopogen_env/bin/bgzip -c > retina/germline/chr20.gl.vcf.gz
+```
 
 # Step 2: Run Beagle for imputation and genotype phasing
 
