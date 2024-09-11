@@ -37,12 +37,14 @@ bgzip = os.path.abspath(args.app_path) + "/bgzip"
 
 
 With:
+```
 out = os.path.abspath(args.out)
 samtools = shutil.which("samtools")
 bcftools = shutil.which("bcftools")
 bgzip = shutil.which("bgzip")
 java = shutil.which("java")
 beagle = os.path.abspath(args.app_path) + "/ beagle.27Jul16.86a.jar"
+```
 
 
 # Run Preprocessing
